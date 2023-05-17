@@ -191,9 +191,14 @@
         "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
         "affectsGlobalScope": true
       },
+      "../src/data/13477.json": {
+        "version": "8970a1bf66fdef31b1d1faf9bcd3fe7c50fadb011989d2edd885e697cc45a779",
+        "signature": "11337a6e561c717ad047d6aadd016ba3d9448075d569b721343abbded5d0155f",
+        "affectsGlobalScope": true
+      },
       "../src/types/nfe/index.ts": {
-        "version": "aabf0e6bf3987ec6faf6305fc2c78d2049e90ffe9af7e8f946456ad961d714e1",
-        "signature": "6350085f3c85787f1266d814d656d34ef1ce451e4e0d15ca0496296fe8fcf593",
+        "version": "ba8cae7eb402da87b4f4040c12d8dd9c2eeeebdedad3ab045100bcc34e546672",
+        "signature": "3ae6f71a595a35d51f4389b61eac47800f51e5839b714bf926e4cf8ee6ef0125",
         "affectsGlobalScope": false
       },
       "../src/types/index.ts": {
@@ -207,13 +212,13 @@
         "affectsGlobalScope": false
       },
       "../src/utils.ts": {
-        "version": "ef7a2612a3b86fe3ee71d891521bba0e11782c52f1bfd48ed490c5e2f3039326",
+        "version": "b072d7bc70c4a07cad886e2860b665679652cedf4b2167cce3975b3ff45a0d01",
         "signature": "6dc6cc29c722f15dd9e1c55255fac6dcad9ac21774207fa7ff8862e265d17148",
         "affectsGlobalScope": false
       },
       "../src/danfe.ts": {
-        "version": "27f7262c9f965d5b1c9aa8dcec4ca60312bde4895e5c2743c6cf112bfce97516",
-        "signature": "b8700a3b1f4a2eb8a17871138f4d303f46d23ac40aaf3ea9c7cf380590832a64",
+        "version": "bf3c77fb2075eafadb9b1374b0994ab6deacafb403e747b1e82306573c2504dc",
+        "signature": "799b4765dd31e1e6975fb442472de0e4488cab881e7b417d0a1b2f1db978ff53",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
@@ -524,7 +529,6 @@
         "../src/types"
       ],
       "project": "../tsconfig.json",
-      "watch": true,
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
@@ -1000,8 +1004,12 @@
       ],
       "../src/danfe.ts": [
         "../node_modules/@types/node/ts4.8/util.d.ts",
+        "../src/data/13477.json",
         "../src/types/index.ts",
         "../src/utils.ts"
+      ],
+      "../src/data/13477.json": [
+        "../node_modules/@types/node/ts4.8/util.d.ts"
       ],
       "../src/index.ts": [
         "../node_modules/@types/node/ts4.8/util.d.ts",
