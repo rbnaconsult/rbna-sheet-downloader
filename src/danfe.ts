@@ -1,3 +1,4 @@
+import NFe_13477 from './data/13477.json';
 import { NFeXML } from './types';
 import { downloadXLSXSpreadsheet, XLSXOptions } from './utils';
 
@@ -14,7 +15,7 @@ interface DanfeXLSXRow {
   'Aliquota ICMS': number | string;
 }
 
-function downloadDanfeFromNfes(nfes: NFeXML[], options: XLSXOptions) {
+function downloadDanfeXLSXFromNfes(nfes: NFeXML[], options: XLSXOptions) {
   const rows: DanfeXLSXRow[] = nfes
     .map((nfe) => {
       const { ide, emit, det } = nfe.nfeProc.NFe.infNFe;
@@ -47,5 +48,12 @@ function downloadDanfeFromNfes(nfes: NFeXML[], options: XLSXOptions) {
   downloadXLSXSpreadsheet(rows, options);
 }
 
-export { downloadDanfeFromNfes };
+function downloadExampleDanfeXLSX() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  downloadDanfeXLSXFromNfes([NFe_13477 as any], {
+    filename: '[EXEMPLO] Danfe',
+  });
+}
+
+export { downloadDanfeXLSXFromNfes, downloadExampleDanfeXLSX };
 export type { DanfeXLSXRow };
