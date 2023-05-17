@@ -40,9 +40,6 @@
   "engines": {
     "node": ">=10"
   },
-  "dependencies": {
-    "@bitauth/libauth": "^1.17.1"
-  },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
@@ -101,5 +98,8 @@
     "exclude": [
       "**/*.spec.js"
     ]
+  },
+  "dependencies": {
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz"
   }
 }
