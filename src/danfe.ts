@@ -1,4 +1,3 @@
-import NFe_13477 from './data/13477.json';
 import { NFeXML } from './types';
 import { downloadXLSXSpreadsheet, XLSXOptions } from './utils';
 
@@ -48,12 +47,5 @@ function downloadDanfeXLSXFromNfes(nfes: NFeXML[], options: XLSXOptions) {
   downloadXLSXSpreadsheet(rows, options);
 }
 
-function downloadExampleDanfeXLSX() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  downloadDanfeXLSXFromNfes([NFe_13477 as any], {
-    filename: '[EXEMPLO] Danfe',
-  });
-}
-
-export { downloadDanfeXLSXFromNfes, downloadExampleDanfeXLSX };
+export { downloadDanfeXLSXFromNfes };
 export type { DanfeXLSXRow };

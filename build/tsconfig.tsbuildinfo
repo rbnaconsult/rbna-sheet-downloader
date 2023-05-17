@@ -191,11 +191,6 @@
         "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
         "affectsGlobalScope": true
       },
-      "../src/data/13477.json": {
-        "version": "8970a1bf66fdef31b1d1faf9bcd3fe7c50fadb011989d2edd885e697cc45a779",
-        "signature": "11337a6e561c717ad047d6aadd016ba3d9448075d569b721343abbded5d0155f",
-        "affectsGlobalScope": true
-      },
       "../src/types/nfe/index.ts": {
         "version": "ba8cae7eb402da87b4f4040c12d8dd9c2eeeebdedad3ab045100bcc34e546672",
         "signature": "3ae6f71a595a35d51f4389b61eac47800f51e5839b714bf926e4cf8ee6ef0125",
@@ -217,13 +212,18 @@
         "affectsGlobalScope": false
       },
       "../src/danfe.ts": {
-        "version": "bf3c77fb2075eafadb9b1374b0994ab6deacafb403e747b1e82306573c2504dc",
-        "signature": "799b4765dd31e1e6975fb442472de0e4488cab881e7b417d0a1b2f1db978ff53",
+        "version": "a2bfb09c4e6dbc8ec267014208b18e204b8f10b4ebdc0bcefa715df284954b8f",
+        "signature": "b8fd0dd3efbbc7cac7c8c6824ddfc048ac4299f8f614c55e780e2f3bb86721f9",
+        "affectsGlobalScope": false
+      },
+      "../src/example.ts": {
+        "version": "18e7347613e5555040661375db8771488d2fc5d92e337b977f23083fc8715080",
+        "signature": "13c9de6795fa0ad1a1837a4c79e340dc0304f7769b072c45f231899135a88385",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "451ecbd0e577758ee99de03b2cbd95f5ac9e84baa4548eca9b02ed990ba878d7",
-        "signature": "451ecbd0e577758ee99de03b2cbd95f5ac9e84baa4548eca9b02ed990ba878d7",
+        "version": "cafa32ec3ea8ccb4d0cd2dff7b5d8a55e777b3c6aab821983a231bad212f554a",
+        "signature": "cafa32ec3ea8ccb4d0cd2dff7b5d8a55e777b3c6aab821983a231bad212f554a",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/ts4.8/assert.d.ts": {
@@ -1004,16 +1004,17 @@
       ],
       "../src/danfe.ts": [
         "../node_modules/@types/node/ts4.8/util.d.ts",
-        "../src/data/13477.json",
         "../src/types/index.ts",
         "../src/utils.ts"
       ],
-      "../src/data/13477.json": [
-        "../node_modules/@types/node/ts4.8/util.d.ts"
+      "../src/example.ts": [
+        "../node_modules/@types/node/ts4.8/util.d.ts",
+        "../src/danfe.ts"
       ],
       "../src/index.ts": [
         "../node_modules/@types/node/ts4.8/util.d.ts",
-        "../src/danfe.ts"
+        "../src/danfe.ts",
+        "../src/example.ts"
       ],
       "../src/types/index.ts": [
         "../node_modules/@types/node/ts4.8/util.d.ts",
@@ -1503,7 +1504,8 @@
         "../src/utils.ts"
       ],
       "../src/index.ts": [
-        "../src/danfe.ts"
+        "../src/danfe.ts",
+        "../src/example.ts"
       ],
       "../src/types/index.ts": [
         "../src/types/nfe/index.ts"

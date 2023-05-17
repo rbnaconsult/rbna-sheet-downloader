@@ -13,6 +13,5 @@ interface DanfeXLSXRow {
     'Aliquota ICMS': number | string;
 }
 declare function downloadDanfeXLSXFromNfes(nfes: NFeXML[], options: XLSXOptions): void;
-declare function downloadExampleDanfeXLSX(): void;
-export { downloadDanfeXLSXFromNfes, downloadExampleDanfeXLSX };
+export { downloadDanfeXLSXFromNfes };
 export type { DanfeXLSXRow };
